@@ -1,0 +1,5 @@
+module DestinationsHelper
+
+
+
+end

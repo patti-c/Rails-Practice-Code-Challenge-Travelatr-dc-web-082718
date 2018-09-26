@@ -1,0 +1,8 @@
+<h1><%= @post.title %></h1>
+<h2>By <%= link_to @post.blogger_name, blogger_path(@post.blogger) %></h2>
+<h3>A lovely trip to <%= link_to @post.destination_name, destination_path(@post.destination) %></h3>
+<h3>Likes: <%= @post.likes %> </h3>
+<div><%= @post.content %></div>
+<%= form_for @post do |f| %>
+  <%= f.submit('liked', name: 'post[liked]') %>
+<% end %>
